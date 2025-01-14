@@ -46,7 +46,6 @@ body {
     margin-bottom: 20px;
   }
   
-  /* Form Labels */
   label {
     display: block;
     margin-bottom: 8px;
@@ -54,7 +53,6 @@ body {
     color: #2A5D90;
   }
   
-  /* Form Inputs */
   input {
     width: calc(100% - 20px);
     padding: 10px;
@@ -66,11 +64,6 @@ body {
     background-color: #f8f8fc;
   }
   
-  input::placeholder {
-    color: #bbbbbb;
-  }
-  
-  /* Buttons */
   button {
     width: 100%;
     padding: 12px;
@@ -82,34 +75,26 @@ body {
     font-weight: bold;
     cursor: pointer;
     margin: 20px 0;
-    display: block;
   }
   
   button:hover {
     background-color: #1B6EB5;
   }
   
-  /* Results Section */
-  #results {
-    font-size: 16px;
+  #results p {
     color: #2A5D90;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
     line-height: 1.6;
   }
   
-  #results p {
-    color: #2A5D90;
+  .signature {
+    text-align: center;
+    font-size: 12px;
+    color: #bbbbbb;
   }
   
   /* Info Section */
   .info-box {
-    background-color: #2A5D90;
+    background-color: rgba(42, 93, 144, 0.95);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -121,7 +106,7 @@ body {
     color: white;
   }
   
-  hr {
+  .info-box hr {
     border: 0.5px solid white;
   }
   
@@ -136,12 +121,5 @@ body {
   p {
     margin-top: 5px;
     color: #dcefff;
-  }
-  
-  /* Signature */
-  .signature {
-    text-align: center;
-    font-size: 12px;
-    color: #bbbbbb;
   }
   
