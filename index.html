@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rad AI Efficiency Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Calculator Section -->
+    <div class="calculator">
+      <img src="radai-logo.png" alt="Rad AI Logo" class="logo">
+      <h1>Rad AI Efficiency Calculator</h1>
+      <p class="subtitle">See how much time and money your practice can save with Rad AI</p>
+      <form>
+        <label for="numRadiologists">Number of Radiologists:</label>
+        <input type="number" id="numRadiologists" placeholder="5" required>
+
+        <label for="reportsPerDay">Average Reports Per Radiologist Per Day:</label>
+        <input type="number" id="reportsPerDay" placeholder="30" required>
+
+        <label for="timePerReport">Time Spent Per Report (Minutes):</label>
+        <input type="number" id="timePerReport" placeholder="10" required>
+
+        <label for="salary">Average Radiologist Salary (USD):</label>
+        <input type="number" id="salary" placeholder="350,000" required>
+
+        <button type="button" id="calculateButton">Calculate Savings</button>
+      </form>
+      <p id="results"></p>
+      <p class="signature" style="color: #bbbbbb;">Created by Shane Swiderek</p>
+    </div>
+
+    <!-- Info Section -->
+    <div class="info-box">
+      <h2>How the Rad AI Calculator Works 💡</h2>
+      <p>
+        This calculator estimates your practice's potential time and cost savings by automating radiology report generation with Rad AI. The assumptions are based on real-world industry benchmarks and feedback from Rad AI users.
+      </p>
+      <hr>
+      <h3>Steps to Use:</h3>
+      <ol>
+        <li>Input Your Practice Details 🏥
+          <p>Enter the number of radiologists, average reports per day, time per report, and radiologist salary.</p>
+        </li>
+        <li>See Your Savings 📊
+          <ul>
+            <li>Total Time Saved ⏱</li>
+            <li>Annual Cost Savings 💰</li>
+            <li>Additional Reports Completed 📈</li>
+          </ul>
+        </li>
+      </ol>
+      <hr>
+      <h3>Assumptions Made ⚙️</h3>
+      <ul>
+        <li>⏱ <b>Time Saved:</b> The calculator assumes that Rad AI can reduce report completion time by up to 35%, based on industry data indicating that AI-assisted reporting significantly reduces repetitive tasks.</li>
+        <li>💰 <b>Cost Savings:</b> Savings are calculated based on the average annual salary of a radiologist and the time saved through automation. The average hourly wage is derived from the annual salary divided by 2,080 hours (standard full-time work year).</li>
+        <li>📅 <b>Working Days Per Year:</b> The calculator assumes 250 working days per year, accounting for weekends and holidays.</li>
+        <li>📈 <b>Report Volume:</b> Estimates are based on typical daily report volumes for radiologists, which vary based on specialty, practice size, and geographic location.</li>
+        <li>📊 <b>Scalability:</b> The time and cost savings scale with the size of the practice, meaning larger practices with more radiologists will see higher absolute savings.</li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
